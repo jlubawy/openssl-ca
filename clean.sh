@@ -3,13 +3,13 @@
 if [[ $1 = "confirm" ]]; then
     rm -rf ca/index.txt \
            ca/serial \
-           ca/certs/ca.crt \
-           ca/private/ca.key \
+           ca/certs \
+           ca/private \
            intermediate/index.txt \
            intermediate/serial \
-           intermediate/certs/intermediate.crt \
-           intermediate/private/intermediate.key \
-           intermediate/csr/intermediate.csr
+           intermediate/certs \
+           intermediate/private \
+           intermediate/csr
     ./create_env.sh
 
 else
